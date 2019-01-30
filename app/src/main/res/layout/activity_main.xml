@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout_id"
+    tools:context="com.riyan.myapps.MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!--scroll-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BIODATA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Silahkan isi data anda dengan baik dan benar sesuai kartu identitas"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:id="@+id/etNama"/>
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:gravity="top|left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat"
+                android:id="@+id/etAlamat"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tempat Lahir"
+                android:id="@+id/etTempatLahir"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="Tanggal Lahir"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_weight="1"
+                    android:id="@+id/etTanggalLahir"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/jenis_kelamin"
+                    android:id="@+id/spKelamin">
+                </Spinner>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Telepon"
+                android:id="@+id/etTelepon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah"
+                    android:layout_weight="1"
+                    android:id="@+id/btTambah"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ulangi"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:id="@+id/btUlangi"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Batal"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorAccent"
+                    android:id="@+id/btBatal"/>
+
+            </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kirim"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorAccent"
+                    android:id="@+id/btKirim"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

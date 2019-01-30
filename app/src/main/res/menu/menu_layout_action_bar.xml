@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/ac_test"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_musik"
+        android:title="actionbar_test"/>
+
+    <item android:id="@+id/ac_test_lagi"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/icon_musik"
+        android:title="test_lagi"/>
+
+    <item android:id="@+id/lagi_lagi_test"
+        app:showAsAction="never"
+        android:icon="@drawable/icon_musik"
+        android:title="lagi_lagi_test"/>
+
+</menu>
